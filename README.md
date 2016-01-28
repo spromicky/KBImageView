@@ -4,7 +4,7 @@ UIImageView subclass that can change images with Ken Burns effect. This image vi
 
  Its implement like UITableViewDelegate. You can say how much images you have in `numberOfImagesInImageView:`, and return each one in `imageView:imageForIndex:`.
 
-![](example.gif)
+![](https://media.giphy.com/media/26tn9xsRS0iMLPrUI/giphy.gif)
 
 All images from [Unsplash](https://unsplash.com).
 
