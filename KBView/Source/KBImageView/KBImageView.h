@@ -3,7 +3,23 @@
 @class KBImageView;
 @protocol KBImageViewDelegate <NSObject>
 
+/**
+ *  Asks delegate to return the number of images in slide show.
+ *
+ *  @param imageView An object that required a number of images.
+ *
+ *  @return The number of images in slide show.
+ */
 - (NSUInteger)numberOfImagesInImageView:(KBImageView *)imageView;
+
+/**
+ *  Asks delegate to return the image for given index.
+ *
+ *  @param imageView An object that required a number of images.
+ *  @param index     An index number identifying image positin in slide show.
+ *
+ *  @return An image for current index.
+ */
 - (UIImage *)imageView:(KBImageView *)imageView imageForIndex:(NSUInteger)index;
 
 @end

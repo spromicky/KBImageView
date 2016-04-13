@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KBImageView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "UIImageView with Ken Burns effect."
   s.homepage     = "https://github.com/spromicky/KBImageView"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }

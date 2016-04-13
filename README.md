@@ -1,12 +1,19 @@
 # KBImageView
 
-UIImageView subclass that can change images with Ken Burns effect. This image view is good for some kind of landing page or for unusual backgrounds.
-
- Its implement like UITableViewDelegate. You can say how much images you have in `numberOfImagesInImageView:`, and return each one in `imageView:imageForIndex:`.
+`UIImageView` subclass that can change images with Ken Burns effect. This image view is good for some kind of landing page or for unusual backgrounds.
 
 ![](https://media.giphy.com/media/26tn9xsRS0iMLPrUI/giphy.gif)
 
 All images from [Unsplash](https://unsplash.com).
+
+## Usage
+
+To support `KBImageView` in your application you must set `delegate` for it. This delegate must confirm to protocol `KBImageViewDelegate`. And implement two required methods: 
+
+- `numberOfImagesInImageView:` - must return number of all images in slide show. Called every time before image going to changed.
+- `imageView:imageForIndex:` - must return image for current index. Also called every time before image going to changed.
+
+`KBImageView` does not stores all image, that was presented before. Just only one current image.
 
 ## Installation
 
