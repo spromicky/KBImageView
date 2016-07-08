@@ -2,7 +2,7 @@
 
 `UIImageView` subclass that can change images with Ken Burns effect. This image view is good for some kind of landing page or for unusual backgrounds.
 
-![](https://media.giphy.com/media/26tn9xsRS0iMLPrUI/giphy.gif)
+![](example.gif)
 
 All images from [Unsplash](https://unsplash.com).
 
