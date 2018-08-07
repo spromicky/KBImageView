@@ -181,7 +181,6 @@
 				TargetAttributes = {
 					01247CF61B26E73900D07549 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = P5HBVTG9QK;
 					};
 				};
 			};
@@ -361,7 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = P5HBVTG9QK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "KBView/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -375,7 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = P5HBVTG9QK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "KBView/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
