@@ -17,15 +17,11 @@
     CGRect keyboardRect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     CGFloat keyboardAnimationDuration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
     
-    for (NSLayoutConstraint *constraint in self.view.constraints) {
-        if ([constraint.identifier isEqualToString:@"centerY"]) {
-            constraint.constant = -fabs(self.view.frame.size.height - keyboardRect.origin.y) / 2;
-            
-            [UIView animateWithDuration:keyboardAnimationDuration animations:^{
-                [self.view layoutIfNeeded];
-            }];
-        }
-    }
+    self.centerConstraint.constant = -fabs(self.view.frame.size.height - keyboardRect.origin.y) / 2.f;
+    
+    [UIView animateWithDuration:keyboardAnimationDuration animations:^{
+        [self.view layoutIfNeeded];
+    }];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -63,7 +59,7 @@
 
 - (UIImage *)imageView:(KBImageView *)imageView imageForIndex:(NSUInteger)index
 {
-    return [UIImage imageNamed:[NSString stringWithFormat:@"%u.jpg", index + 1]];
+    return [UIImage imageNamed:[NSString stringWithFormat:@"%lu.jpg", index + 1]];
 }
 
 @end

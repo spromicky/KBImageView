@@ -18,8 +18,11 @@
 {
     NSDictionary *drawAttributes = @{NSFontAttributeName: self.font,
                                      NSForegroundColorAttributeName : [UIColor lightGrayColor]};
-    CGSize textSize = [[self placeholder] sizeWithAttributes:@{NSFontAttributeName : self.font}];
-    rect.origin.y = (self.frame.size.height - textSize.height) / 2;
+    if (@available(iOS 11, *)) {
+    } else {
+        CGSize textSize = [[self placeholder] sizeWithAttributes:@{NSFontAttributeName : self.font}];
+        rect.origin.y = (self.frame.size.height - textSize.height) / 2;        
+    }
     [[self placeholder] drawInRect:rect withAttributes:drawAttributes];
 }
 
